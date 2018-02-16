@@ -223,6 +223,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level_file: test_level
+  square_prefab: {fileID: 1855468269527680, guid: 99e6f8b37ce6145718902a8561f1e201,
+    type: 2}
 --- !u!1 &2132153043
 GameObject:
   m_ObjectHideFlags: 0

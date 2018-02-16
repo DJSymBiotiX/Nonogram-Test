@@ -19,10 +19,10 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4560628103382794}
+  - component: {fileID: 61514429438854886}
   - component: {fileID: 212891602357800934}
   - component: {fileID: 114808670961209804}
   - component: {fileID: 114891225691077526}
-  - component: {fileID: 61514429438854886}
   - component: {fileID: 114811556016359158}
   m_Layer: 0
   m_Name: Grey_Square
@@ -60,14 +60,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.61, y: 4.63}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 4.61, y: 4.63}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.61, y: 4.63}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &114808670961209804
 MonoBehaviour:
@@ -94,6 +94,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c7cc706baf3745d18bd6f557cf0a88e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  empty: {fileID: 21300000, guid: 4438e1bf9fd48467da9303038cecbcdd, type: 3}
+  on: {fileID: 21300000, guid: 00f7bf5fdeb754795ba6f46be8ca5462, type: 3}
+  off: {fileID: 21300000, guid: 33ee6dfd464c44de9aeff74b850b6167, type: 3}
 --- !u!114 &114891225691077526
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -146,7 +149,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1b182fdf350d441c682e3a89023c1d19, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4438e1bf9fd48467da9303038cecbcdd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -4,6 +4,10 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class GridSquare : MonoBehaviour, IPointerEnterHandler, IPointerDownHandler, IPointerUpHandler {
+	public Sprite empty;
+	public Sprite on;
+	public Sprite off;
+
 	eTileState state = eTileState.empty;
 
 	// Use this for initialization
@@ -58,7 +62,8 @@ public class GridSquare : MonoBehaviour, IPointerEnterHandler, IPointerDownHandl
 	void set_on(bool click=false) {
 		SpriteRenderer item = this.gameObject.GetComponent<SpriteRenderer>();
 		state = eTileState.on;
-		item.color = Color.blue;
+		item.sprite = on;
+		//item.color = Color.blue;
 
 		if (click)
 			GameStateScript.tile_set_state = state;
@@ -67,7 +72,8 @@ public class GridSquare : MonoBehaviour, IPointerEnterHandler, IPointerDownHandl
 	void set_empty(bool click=false, eTileState clear_state=eTileState.none) {
 		SpriteRenderer item = this.gameObject.GetComponent<SpriteRenderer>();
 		state = eTileState.empty;
-		item.color = Color.white;
+		item.sprite = empty;
+		//item.color = Color.white;
 
 		if (click) {
 			GameStateScript.tile_set_state = state;
@@ -78,7 +84,8 @@ public class GridSquare : MonoBehaviour, IPointerEnterHandler, IPointerDownHandl
 	void set_off(bool click=false) {
 		SpriteRenderer item = this.gameObject.GetComponent<SpriteRenderer>();
 		state = eTileState.off;
-		item.color = Color.red;
+		item.sprite = off;
+		//item.color = Color.red;
 
 		if (click)
 			GameStateScript.tile_set_state = state;
