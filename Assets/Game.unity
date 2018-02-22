@@ -316,7 +316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220131afe885548c9b7a4b749bd208ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level_file: test_level
+  level_file: test_level2
   square_prefab: {fileID: 1855468269527680, guid: 99e6f8b37ce6145718902a8561f1e201,
     type: 2}
   canvas: {fileID: 813745740}

@@ -58,8 +58,6 @@ public class SceneState : MonoBehaviour {
 	void LoadClues(){
 		int fontsize = 20;
 
-		string str = "";
-
 		for (int i = 0; i < row_clues.Length; i++) {
 			for (int j = row_clues[i].Count - 1 ; j >= 0 ; j--) {
 				GameObject ngo = new GameObject ("myTextGO");
